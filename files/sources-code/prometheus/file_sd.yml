@@ -1,0 +1,20 @@
+# add an instance of node exporter and try automatically discover the new node exporter
+# instances using this Service Discovery file
+
+- targets:
+  - localhost:9100
+  labels:
+    team: "development"
+    region: "Casablanca"
+
+- targets:
+  - localhost:9100
+  labels:
+    team: "Integation"
+    region: "Agadir"
+
+- targets:
+  - localhost:9100
+  labels:
+    team: "QA"
+    region: "Tanger"
